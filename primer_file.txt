@@ -1,5 +1,9 @@
 Zdravo na site
 ova e commit od strana na Sofija.
 
+Eee ova linija ja ti ja promeniv 
+
+for i in range(0,5):
+	print('hahaha')
 
 Cao.
