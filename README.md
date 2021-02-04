@@ -1,8 +1,23 @@
+[//]: # (Image references)
+
+[image1]: documentation/Loss_train.svg "Training Loss"
+[image2]: https://img.youtube.com/vi/Qz6XNSB0F3E/0.jpg
+[image3]: https://img.youtube.com/vi/Qz6XNSB0F3E/0.jpg
+[image4]: https://img.youtube.com/vi/Qz6XNSB0F3E/0.jpg
+
+
 # Project documentation
 ---------------
 
 # Introduction
 **This is official implementation of Neural networks**
+
+
+
+| Video1 | Video 2| Video 3|
+|-------------|----------------|---|
+|[![image2]](https://www.youtube.com/watch?v=Qz6XNSB0F3E)Tekst1|[![image2]](https://www.youtube.com/watch?v=Qz6XNSB0F3E)Tekst 2|[![image2]](https://www.youtube.com/watch?v=Qz6XNSB0F3E) Tekst3|
+
 
 
 # General Information
@@ -54,6 +69,9 @@ We have the following performance of our model :
 |-------------|----------------|
 |98.8%|43%|
 |23%|47%|
+
+<img src = "documentation/Loss_train.svg" width="50%" height="50%"/>
+<img src = "documentation/Loss_type.svg" width="50%" height="50%"/>
 
 ## Dataset Information
 You can download the dataset : [Link](http://brainster.co)
