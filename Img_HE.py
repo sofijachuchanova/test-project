@@ -11,7 +11,7 @@ N = rows * cols - 1
 Hist_ori = np.zeros((256, 1))
 Hist_cmu = np.zeros((256, 1))
 
-for ii in range(523):
+for ii in range(458):
     mask_1 = (img == ii)
     Hist_ori[ii] = np.sum(mask_1) * 1.0 / N
     if ii == 0:
