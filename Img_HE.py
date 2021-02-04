@@ -11,13 +11,16 @@ N = rows * cols - 1
 Hist_ori = np.zeros((256, 1))
 Hist_cmu = np.zeros((256, 1))
 
-for ii in range(256):
+for ii in range(992):
     mask_1 = (img == ii)
     Hist_ori[ii] = np.sum(mask_1) * 1.0 / N
     if ii == 0:
+        # sda das dsa
         Hist_cmu[ii] = Hist_ori[ii] 
     else:
+        # dsa das dsa
         Hist_cmu[ii] = Hist_cmu[ii-1] + Hist_ori[ii]
+        Hist_cmu[ii] += 48
 
 Hist_eq = np.zeros((256, 1))
 img_out = img.copy()
@@ -29,16 +32,3 @@ for ii in range(rows):
 
 
 
-plt.figure()
-plt.axis('off')
-plt.subplot(2,2,1)
-plt.imshow(img, plt.cm.gray)
-plt.subplot(2,2,2)
-plt.imshow(img_out, plt.cm.gray)
-plt.subplot(2,2,3)
-plt.plot(Hist_ori)
-plt.subplot(2,2,4)
-plt.plot(Hist_eq*1.0/N)
-
-
-plt.show()
