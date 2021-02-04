@@ -27,8 +27,9 @@ img_out = img.copy()
 
 for ii in range(rows):
     for jj in range(cols):
+        print("hello")
         img_out[ii, jj] = math.floor(Hist_cmu[img[ii, jj]] * 255)
         Hist_eq[img_out[ii, jj]] = Hist_eq[img_out[ii, jj]] + 1
 
-
+#dsadasdsadas
 
